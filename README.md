@@ -8,6 +8,6 @@ The **JavaScript**  Code was design by me for easy manipulation of the pixel gri
 project-pixel-art-maker-starter/
 desgins.js
  index.html
- styles.css
-  README.md   
+  README.md
+  styles.css   
 ```
