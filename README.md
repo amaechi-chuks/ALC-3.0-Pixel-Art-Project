@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
- [Introduction](#introduction)
-  [Folder Structure](#folder-structure)
-  [Instructions](#instructions)
-   [Contributed](#contributed)
-    [Live Review](#live-review)
+ - [Introduction](#introduction)
+ - [Folder Structure](#folder-structure)
+ - [Instructions](#instructions)
+ - [Contributed](#contributed)
+ - [Live Review](#live-review)
 
 ## Introduction
 
