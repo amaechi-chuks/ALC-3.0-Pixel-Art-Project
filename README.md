@@ -23,7 +23,7 @@ desgins.js
   styles.css   
 ```
 
-##Instructions 
+## Instructions 
 
  Try loading up `index.html` from the starter project to see how things look! Notice that the design.js file is implemented in the <body> tag in the index.html file. Your goal is to build out the `design.js` file to achieve all the interactive elements on the page!.
  You are to use the skills you acqiured during this program on udacity classroom to create design.js.
