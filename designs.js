@@ -24,21 +24,21 @@ $(document).ready(function() {
   makeGrid();
 
     // Prevent default submit behavior and call makeGrid function
-    $("#sizePicker").submit(function(e) {
+    $("#sizePicker").submit((e) =>{
       e.preventDefault();
       makeGrid();
     });
    
     //Change the currentColor to the selected one
-    $("#colorPicker").change(function() {
+    $("#colorPicker").change(() => {
       currentColor = $(this).val();
     });
 
-   theGrid.on("click", "td", function(e) {
+   theGrid.on("click", "td", (e) => {
       $(this).css("background-color", currentColor); //added color to grid
     });
 
-    theGrid.on("dblclick", "td", function(e) {
+    theGrid.on("dblclick", "td", (e) => {
         $(this).css("background-color", ""); //remove colored grid on double-click
       });
      
