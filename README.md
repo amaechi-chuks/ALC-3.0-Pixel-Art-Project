@@ -11,3 +11,6 @@ desgins.js
   README.md
   styles.css   
 ```
+
+## gh-page Link
+Click [Here](https://amaechi-chuks.github.io/ALC-3.0-Pixel-Art-Project/) to view the project.
