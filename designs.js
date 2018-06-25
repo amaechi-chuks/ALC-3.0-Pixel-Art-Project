@@ -41,10 +41,5 @@ $(document).ready(function() {
     theGrid.on("dblclick", "td", function(e) {
         $(this).css("background-color", ""); //remove colored grid on double-click
       });
-    
-    theGrid.on("click", function () {
-      $(this).removeAttr("background-color","");
-    });
-
-   
+     
 });
