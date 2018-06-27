@@ -47,7 +47,28 @@ body {
  input[type=number] {
     width: 6em;
  }
+  
+ #input-submit {
+   color: green;
+   width: 60px;
+   height: 25px;  
+ }
 
+ #clearColor {
+  color: green;
+  width: 60px;
+  height: 25px;
+ }
+ 
+form {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#inputHeight, #inputWidth {
+  width: 60px;
+  height: 20px; 
+}
  /* styling footer*/
  
  footer {
