@@ -9,7 +9,8 @@ $(document).ready(function() {
       makeGrid();
       changesColor();
       addColor();
-      removeGridColor()
+      removeGridColorOnDoubleClick()
+      clearColor();
     });
 
     //Implementation to Build the grid
@@ -49,11 +50,22 @@ $(document).ready(function() {
   addColor();
    
 //remove colored grid on double-click
-function removeGridColor() {
+function removeGridColorOnDoubleClick() {
   theGrid.on("dblclick", "td", function(e) {
     $(this).css("background-color", ""); 
   });
 }
-removeGridColor();
+removeGridColorOnDoubleClick();
+
+//clear all colored grid
+function clearColor() {
+  let clear = $("#clearColor");
+  let targetCell = $("td");
+  clear.click(function() {
+    targetCell.removeAttr("style");
+  });
+}
+clearColor();
     
 });
+
