@@ -11,6 +11,7 @@ $(document).ready(function() {
     addColor();
     removeGridColorOnDoubleClick()
     clearColor();
+    clearGrid();
   });
 
   //Implementation to Build the grid
@@ -40,8 +41,8 @@ $(document).ready(function() {
     });
   }
   changesColor();
-
-  //added color to grid
+  
+//added color to grid
   function addColor() {
     theGrid.on("click", "td", function(e) {
       $(this).css("background-color", currentColor);
@@ -61,10 +62,20 @@ $(document).ready(function() {
   function clearColor() {
     let clear = $("#clearColor");
     let targetCell = $("td");
-    clear.click(function() {
+    clear.on("click", function() {
       targetCell.removeAttr("style");
     });
   }
   clearColor();
+
+  //clear all grid  
+  function clearGrid() {
+    let clearButton = $("#clearGrid");
+    let actualgrid = $("tr");
+    clearButton.on("click", function(){
+      actualgrid.remove();
+    });
+  }
+  clearGrid();
 
 });
