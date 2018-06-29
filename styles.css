@@ -53,11 +53,8 @@ body {
    width: 60px;
    height: 25px;  
  }
-
- #clearColor {
-  color: green;
-  width: 60px;
-  height: 25px;
+ #clearColor, #clearGrid {
+   color: green;
  }
  
 form {
