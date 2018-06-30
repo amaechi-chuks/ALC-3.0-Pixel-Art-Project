@@ -27,7 +27,7 @@ $(document).ready(function() {
 
       //Implementation to  Create columns for each row
       for (let columns = 0; columns <= gridWidth - 1; columns++) {
-        $("tr").filter(":last").append("<td></td>");
+        $("tr").last().append("<td></td>");
       }
       theGrid.append("</tr>"); //End Row
     }
