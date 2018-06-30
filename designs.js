@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   // Prevent default submit behavior and function calls
   $("#sizePicker").submit(function(e) {
-    e.preventDefault();
+    e.preventDefault(); // the event default action will not be triggered
     makeGrid();
     changesColor();
     addColor();
@@ -22,11 +22,11 @@ $(document).ready(function() {
     theGrid.empty(); //Empty the grid and start over
 
     //Implementation to  Create rows
-    for (let rows = 0; rows <= gridHeight - 1; rows++) {
+    for (let rows = 0; rows < gridHeight; rows++) {
       theGrid.append("<tr>"); //Start Row
 
       //Implementation to  Create columns for each row
-      for (let columns = 0; columns <= gridWidth - 1; columns++) {
+      for (let columns = 0; columns < gridWidth; columns++) {
         $("tr").last().append("<td></td>");
       }
       theGrid.append("</tr>"); //End Row
